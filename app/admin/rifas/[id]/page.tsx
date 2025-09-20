@@ -82,7 +82,7 @@ export default function AdminRaffleDetailPage({
         setParticipants(participantsData);
         setAvailableNumbers(availableNumbersData);
       } catch (error) {
-        console.error("[v0] Error loading raffle data:", error);
+        console.error(" Error loading raffle data:", error);
       } finally {
         setIsLoading(false);
       }
@@ -95,10 +95,10 @@ export default function AdminRaffleDetailPage({
     try {
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1000));
-      console.log("[v0] Raffle deleted:", params.id);
+      console.log("Raffle deleted:", params.id);
       router.push("/admin/dashboard");
     } catch (error) {
-      console.error("[v0] Error deleting raffle:", error);
+      console.error(" Error deleting raffle:", error);
     }
   };
 

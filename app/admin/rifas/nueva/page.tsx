@@ -109,12 +109,12 @@ export default function NewRafflePage() {
         qrCode: `QR${String(mockRaffles.length + 1).padStart(3, "0")}`,
       };
 
-      console.log("[v0] New raffle created:", newRaffle);
+      console.log("New raffle created:", newRaffle);
 
       // Redirect to raffle detail page
       router.push(`/admin/rifas/${newRaffle.id}`);
     } catch (error) {
-      console.error("[v0] Error creating raffle:", error);
+      console.error("Error creating raffle:", error);
     } finally {
       setIsSubmitting(false);
     }

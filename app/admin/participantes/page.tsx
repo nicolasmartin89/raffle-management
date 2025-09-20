@@ -56,7 +56,7 @@ export default function ParticipantsManagementPage() {
         await new Promise((resolve) => setTimeout(resolve, 500));
         setParticipants(mockParticipants);
       } catch (error) {
-        console.error("[v0] Error loading participants:", error);
+        console.error("Error loading participants:", error);
       } finally {
         setIsLoading(false);
       }

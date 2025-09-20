@@ -73,7 +73,7 @@ export default function EditRafflePage({ params }: { params: { id: string } }) {
           status: raffle.status,
         });
       } catch (error) {
-        console.error("[v0] Error loading raffle:", error);
+        console.error("Error loading raffle:", error);
       } finally {
         setIsLoading(false);
       }
@@ -175,12 +175,12 @@ export default function EditRafflePage({ params }: { params: { id: string } }) {
         totalNumbers: Number.parseInt(formData.totalNumbers),
       };
 
-      console.log("[v0] Raffle updated:", updatedRaffle);
+      console.log("Raffle updated:", updatedRaffle);
 
       // Redirect to raffle detail page
       router.push(`/admin/rifas/${params.id}`);
     } catch (error) {
-      console.error("[v0] Error updating raffle:", error);
+      console.error("Error updating raffle:", error);
     } finally {
       setIsSubmitting(false);
     }

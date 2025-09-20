@@ -48,7 +48,7 @@ export default function ReportsPage() {
         // Simulate API call
         await new Promise((resolve) => setTimeout(resolve, 500));
       } catch (error) {
-        console.error("[v0] Error loading reports data:", error);
+        console.error(" Error loading reports data:", error);
       } finally {
         setIsLoading(false);
       }
